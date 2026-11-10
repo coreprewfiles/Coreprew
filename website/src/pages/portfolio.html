@@ -1,0 +1,58 @@
+<!--meta
+{
+  "title": "Portfolio – Weddings, Pasni, Birthdays & Events | Coreprew Films",
+  "description": "Browse 280+ real galleries from Coreprew Films: Nepali and multicultural weddings, Pasni and Bratabandha ceremonies, engagements, birthdays, corporate events and real estate in Sydney and Nepal.",
+  "path": "/portfolio",
+  "nav": "portfolio",
+  "og_image": "maternity",
+  "scripts": ["assets/js/portfolio-data.js", "assets/js/portfolio.js"]
+}
+-->
+<section class="page-hero">
+  <div class="container">
+    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">Home</a> / Portfolio</nav>
+    <h1>Our work</h1>
+    <p class="lead">Real galleries from real clients. Pick a category or search by name, then tap a photo to open the full gallery.</p>
+  </div>
+</section>
+
+<div class="toolbar">
+  <div class="container">
+    <div class="chips" role="group" aria-label="Filter by category" data-filters>
+      <button class="chip" type="button" data-filter="all" aria-pressed="true">All</button>
+      <button class="chip" type="button" data-filter="weddings" aria-pressed="false">Weddings</button>
+      <button class="chip" type="button" data-filter="ceremonies" aria-pressed="false">Cultural ceremonies</button>
+      <button class="chip" type="button" data-filter="couples" aria-pressed="false">Engagements &amp; couples</button>
+      <button class="chip" type="button" data-filter="family" aria-pressed="false">Birthdays &amp; family</button>
+      <button class="chip" type="button" data-filter="commercial" aria-pressed="false">Commercial &amp; events</button>
+    </div>
+    <label class="search">
+      <span class="sr-only">Search galleries</span>
+      <svg class="icon"><use href="#i-search"/></svg>
+      <input type="search" placeholder="Search by name…" data-search autocomplete="off">
+    </label>
+  </div>
+</div>
+
+<section class="section" style="padding-top:0">
+  <div class="container">
+    <p class="results-note" data-results aria-live="polite"></p>
+    <div class="work-grid" data-grid></div>
+    <p class="empty" data-empty hidden>No galleries match that search. Try another name or <a href="#" data-reset>show everything</a>.</p>
+    <div class="load-more-wrap"><button class="btn btn-outline" type="button" data-more hidden>Show more galleries</button></div>
+    <noscript><p class="center">Turn on JavaScript to browse the gallery, or view it on <a href="https://www.coreprewfilms.com/portfolio">our current site</a>.</p></noscript>
+  </div>
+</section>
+
+<section class="section dark on-dark cta-band">
+  <img class="bg" src="assets/img/hero/sunset-1600.webp" alt="" loading="lazy">
+  <div class="container">
+    <p class="eyebrow light" style="justify-content:center">Like what you see?</p>
+    <h2>Let's create your gallery next</h2>
+    <p>Tell us your date and we'll confirm availability and send a quote.</p>
+    <div class="hero-actions">
+      <a class="btn btn-light" href="contact-us.html#book"><svg class="icon"><use href="#i-calendar"/></svg>Check your date</a>
+      <a class="btn btn-ghost-light" href="services.html">See prices</a>
+    </div>
+  </div>
+</section>

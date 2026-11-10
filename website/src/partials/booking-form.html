@@ -1,0 +1,88 @@
+<form class="form-card booking-form" id="booking-form" novalidate>
+  <h3>Check your date</h3>
+  <p class="hint">Takes about a minute. We'll confirm availability and send you a quote.</p>
+
+  <div class="form-grid">
+    <div class="field">
+      <label for="bf-name">Your name</label>
+      <input id="bf-name" name="name" type="text" autocomplete="name" required>
+    </div>
+    <div class="field">
+      <label for="bf-phone">Phone</label>
+      <input id="bf-phone" name="phone" type="tel" autocomplete="tel" inputmode="tel" placeholder="04xx xxx xxx" required>
+    </div>
+    <div class="field">
+      <label for="bf-event">What are we shooting?</label>
+      <select id="bf-event" name="event" required>
+        <option value="">Choose one…</option>
+        <optgroup label="Weddings &amp; couples">
+          <option>Wedding</option>
+          <option>Wedding reception</option>
+          <option>Engagement / proposal</option>
+          <option>Pre- or post-wedding couple shoot</option>
+          <option>Mehendi / bridal shower</option>
+        </optgroup>
+        <optgroup label="Ceremonies &amp; family">
+          <option>Pasni / Bratabandha / cultural ceremony</option>
+          <option>Birthday</option>
+          <option>Maternity / baby shower</option>
+          <option>Family or portrait session</option>
+        </optgroup>
+        <optgroup label="Business">
+          <option>Corporate event</option>
+          <option>Business promo / product</option>
+          <option>Real estate</option>
+          <option>Drone</option>
+          <option>Travel / adventure</option>
+        </optgroup>
+        <option>Something else</option>
+      </select>
+    </div>
+    <div class="field">
+      <label for="bf-date">Event date</label>
+      <input id="bf-date" name="date" type="date" required>
+    </div>
+    <div class="field full">
+      <span class="sr-only" id="bf-service-label">Service</span>
+      <label aria-hidden="true">Do you need…</label>
+      <div class="segmented" role="radiogroup" aria-labelledby="bf-service-label">
+        <label><input type="radio" name="service" value="Photo" checked><span><svg class="icon"><use href="#i-camera"/></svg>Photo</span></label>
+        <label><input type="radio" name="service" value="Video"><span><svg class="icon"><use href="#i-video"/></svg>Video</span></label>
+        <label><input type="radio" name="service" value="Photo + video"><span>Both</span></label>
+      </div>
+    </div>
+    <div class="field">
+      <label for="bf-location">Suburb / venue <span class="opt">(optional)</span></label>
+      <input id="bf-location" name="location" type="text" autocomplete="address-level2" placeholder="e.g. Parramatta">
+    </div>
+    <div class="field">
+      <label for="bf-package">Package <span class="opt">(optional)</span></label>
+      <select id="bf-package" name="package">
+        <option value="">Not sure yet</option>
+        <optgroup label="Events">
+          <option>Birthday – 3 hrs photography ($500)</option>
+          <option>Silver – 6 hrs photo + video ($1,200)</option>
+          <option>Gold – full day photo + video ($1,400)</option>
+        </optgroup>
+        <optgroup label="Real estate">
+          <option>Launch ($250)</option>
+          <option>Elevate ($300)</option>
+          <option>Prestige ($700)</option>
+          <option>Signature ($900)</option>
+        </optgroup>
+        <option>Custom package</option>
+      </select>
+    </div>
+    <div class="field full">
+      <label for="bf-message">Anything else? <span class="opt">(optional)</span></label>
+      <textarea id="bf-message" name="message" rows="3" placeholder="Start time, number of guests, style you love, best time to call…"></textarea>
+    </div>
+  </div>
+
+  <div class="form-actions">
+    <button class="btn btn-wa" type="submit" value="whatsapp"><svg class="icon"><use href="#i-whatsapp"/></svg>Send on WhatsApp</button>
+    <button class="btn btn-outline" type="submit" value="email"><svg class="icon"><use href="#i-mail"/></svg>Email instead</button>
+  </div>
+  <p class="form-foot"><svg class="icon"><use href="#i-check"/></svg>No payment now. We'll confirm availability and send a quote first.</p>
+  <div class="form-status" role="status" aria-live="polite"></div>
+</form>
